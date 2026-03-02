@@ -1,7 +1,9 @@
 
 import { useState } from "react"
 
-const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
+const API = import.meta.env.VITE_API_URL
+
+console.log("API:", API)
 
 export default function AdminPanel({
   onClose,
@@ -52,7 +54,7 @@ export default function AdminPanel({
 
     const url = editingProjectId
       ? `${API_URL}/api/projects/${editingProjectId}/`
-      : "${API_URL}/api/projects/"
+      : `${API_URL}/api/projects/`
 
     const method = editingProjectId ? "PUT" : "POST"
 
@@ -121,7 +123,7 @@ export default function AdminPanel({
 
     const url = editingSkillId
       ? `${API_URL}/api/skills/${editingSkillId}/`
-      : "${API_URL}/api/skills/"
+      : `${API_URL}/api/skills/`
 
     const method = editingSkillId ? "PUT" : "POST"
 
@@ -181,7 +183,7 @@ export default function AdminPanel({
 
     const url = editingContactId
       ? `${API_URL}/api/contact/${editingContactId}/`
-      : "${API_URL}/api/contact/"
+      : `${API_URL}/api/contact/`
 
     const method = editingContactId ? "PUT" : "POST"
 

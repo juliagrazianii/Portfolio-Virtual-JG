@@ -39,19 +39,19 @@ export default function App() {
   // FETCH DATA
   // ------------------------
   useEffect(() => {
-    fetch('${API_URL}/api/projects/')
+    fetch(`${API_URL}/api/projects/`)
       .then(res => res.json())
       .then(data => setProjects(data))
 
-    fetch('${API_URL}/api/skills/')
+    fetch(`${API_URL}/api/skills/`)
       .then(res => res.json())
       .then(data => setSkills(data))
 
-    fetch('${API_URL}/api/contact/')
+    fetch(`${API_URL}/api/contact/`)
       .then(res => res.json())
       .then(data => setContactLinks(data))
 
-    fetch('${API_URL}/api/about/')
+    fetch(`${API_URL}/api/about/`)
       .then(res => res.json())
       .then(data => setAbout(data))
       }, [])
