@@ -10,6 +10,11 @@ import Login from "./components/Login"
 
 export default function App() {
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
+
+  console.log("API_URL:", import.meta.env.VITE_API_URL)
+
+
   const [projects, setProjects] = useState([])
   const [skills, setSkills] = useState([])
   const [contactLinks, setContactLinks] = useState([])
@@ -34,19 +39,19 @@ export default function App() {
   // FETCH DATA
   // ------------------------
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/projects/")
+    fetch('${API_URL}/api/projects/')
       .then(res => res.json())
       .then(data => setProjects(data))
 
-    fetch("http://127.0.0.1:8000/api/skills/")
+    fetch('${API_URL}/api/skills/')
       .then(res => res.json())
       .then(data => setSkills(data))
 
-    fetch("http://127.0.0.1:8000/api/contact/")
+    fetch('${API_URL}/api/contact/')
       .then(res => res.json())
       .then(data => setContactLinks(data))
 
-    fetch("http://127.0.0.1:8000/api/about/")
+    fetch('${API_URL}/api/about/')
       .then(res => res.json())
       .then(data => setAbout(data))
       }, [])

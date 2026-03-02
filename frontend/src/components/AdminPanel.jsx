@@ -1,6 +1,8 @@
 
 import { useState } from "react"
 
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
+
 export default function AdminPanel({
   onClose,
   projects,
@@ -49,8 +51,8 @@ export default function AdminPanel({
     if (!projectTitle || !projectDesc || !projectTech) return
 
     const url = editingProjectId
-      ? `http://127.0.0.1:8000/api/projects/${editingProjectId}/`
-      : "http://127.0.0.1:8000/api/projects/"
+      ? `${API_URL}/api/projects/${editingProjectId}/`
+      : "${API_URL}/api/projects/"
 
     const method = editingProjectId ? "PUT" : "POST"
 
@@ -91,7 +93,7 @@ export default function AdminPanel({
   }
 
   async function deleteProject(id) {
-    await fetch(`http://127.0.0.1:8000/api/projects/${id}/`, {
+    await fetch(`${API_URL}/api/projects/${id}/`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`
@@ -118,8 +120,8 @@ export default function AdminPanel({
     if (!skillName || !skillPerc || !skillCat) return
 
     const url = editingSkillId
-      ? `http://127.0.0.1:8000/api/skills/${editingSkillId}/`
-      : "http://127.0.0.1:8000/api/skills/"
+      ? `${API_URL}/api/skills/${editingSkillId}/`
+      : "${API_URL}/api/skills/"
 
     const method = editingSkillId ? "PUT" : "POST"
 
@@ -153,7 +155,7 @@ export default function AdminPanel({
   }
 
   async function deleteSkill(id) {
-    await fetch(`http://127.0.0.1:8000/api/skills/${id}/`, {
+    await fetch(`${API_URL}/api/skills/${id}/`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`
@@ -178,8 +180,8 @@ export default function AdminPanel({
     if (!contactName || !contactUrl) return
 
     const url = editingContactId
-      ? `http://127.0.0.1:8000/api/contact/${editingContactId}/`
-      : "http://127.0.0.1:8000/api/contact/"
+      ? `${API_URL}/api/contact/${editingContactId}/`
+      : "${API_URL}/api/contact/"
 
     const method = editingContactId ? "PUT" : "POST"
 
@@ -211,7 +213,7 @@ export default function AdminPanel({
   }
 
   async function deleteContact(id) {
-    await fetch(`http://127.0.0.1:8000/api/contact/${id}/`, {
+    await fetch(`${API_URL}/api/contact/${id}/`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`

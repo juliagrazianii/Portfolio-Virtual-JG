@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000"
+
 export default function Login({ onClose, onLoginSuccess }) {
 
   const [username, setUsername] = useState("")
@@ -14,7 +16,7 @@ export default function Login({ onClose, onLoginSuccess }) {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/token/", {
+      const response = await fetch("${API_URL}/api/token/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
