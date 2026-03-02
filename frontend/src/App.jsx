@@ -50,10 +50,6 @@ export default function App() {
     fetch(`${API_URL}/api/contact/`)
       .then(res => res.json())
       .then(data => setContactLinks(data))
-
-    fetch(`${API_URL}/api/about/`)
-      .then(res => res.json())
-      .then(data => setAbout(data))
       }, [])
 
   // ------------------------

@@ -31,7 +31,11 @@ SECRET_KEY = 'django-insecure-pwur-jsl9%hai$73$xiy_bf)+^)%z96dx^*1wy_f%%_cq8^1ry
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://portfolio-virtual-jg.onrender.com",
+]
+
+ALLOWED_HOSTS = ["portfolio-virtual-jg.onrender.com"]
 
 
 # Application definition
