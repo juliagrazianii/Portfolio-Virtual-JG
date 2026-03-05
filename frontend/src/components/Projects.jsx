@@ -10,7 +10,7 @@ export default function Projects({ projects }) {
         <h2 className="font-heading text-4xl font-bold text-center mb-12 text-[#5A5A5A]">
           Projetos 
         </h2>
-        <p className="text-center text-pink-400 text-sm mb-12 mt-2">
+        <p className="text-center text-pink-400 text-lg mb-12 mt-2">
           clique nos cards para ver mais detalhes
         </p>
 
