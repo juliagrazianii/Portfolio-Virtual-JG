@@ -48,6 +48,7 @@ export default function About() {
       <div>
 
         <p className="text-gray-500 leading-relaxed mb-6">
+          Aluna do sétimo semestre de Engenharia Biomédica na Faculdade Israelita de Ciências da Saúde Albert Einstein (FICSAE).
           Sou uma desenvolvedora apaixonada por criar soluções inovadoras
           e interfaces que encantam. Com experiência em desenvolvimento
           full stack, busco sempre combinar funcionalidade com design
@@ -58,12 +59,12 @@ export default function About() {
         <div className="flex gap-4">
 
           <div className="bg-pink-100 px-6 py-4 rounded-xl">
-            <p className="text-pink-500 font-bold text-xl">3+</p>
+            <p className="text-pink-500 font-bold text-xl">2</p>
             <p className="text-sm text-gray-500">Anos Exp.</p>
           </div>
 
           <div className="bg-green-100 px-6 py-4 rounded-xl">
-            <p className="text-green-500 font-bold text-xl">50+</p>
+            <p className="text-green-500 font-bold text-xl">3</p>
             <p className="text-sm text-gray-500">Projetos</p>
           </div>
 
