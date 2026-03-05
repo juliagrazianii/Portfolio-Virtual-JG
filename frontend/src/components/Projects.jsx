@@ -8,8 +8,11 @@ export default function Projects({ projects }) {
     <section id="projects" className="px-6 py-20 bg-white/50">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-heading text-4xl font-bold text-center mb-12 text-[#5A5A5A]">
-          Projetos ➔ clique para + detalhes
+          Projetos 
         </h2>
+        <p className="text-center text-pink-400 text-sm mb-12 mt-2">
+          clique nos cards para ver mais detalhes
+        </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map(project => (

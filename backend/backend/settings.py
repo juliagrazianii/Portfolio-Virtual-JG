@@ -33,6 +33,7 @@ DEBUG = False
 
 CSRF_TRUSTED_ORIGINS = [
     "https://portfolio-virtual-jg.onrender.com",
+    "https://portfolio-virtual-jg-x9eb.vercel.app/"
 ]
 
 ALLOWED_HOSTS = ["portfolio-virtual-jg.onrender.com"]

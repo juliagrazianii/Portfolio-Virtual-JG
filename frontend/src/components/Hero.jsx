@@ -21,6 +21,10 @@ export default function Hero() {
               Full Stack
             </span>
           </h2>
+
+          <p className="text-gray-500 text-sm mt-2">
+            Transformando ideias em códigos com criatividade e paixão.
+          </p>
         </div>
 
         {/* FOTO + BLOB */}

@@ -6,7 +6,7 @@ export default function About() {
           Sobre Mim
         </h2>
         <p className="text-lg text-[#5A5A5A] max-w-3xl mx-auto">
-          ALuna do sétimo semestre de Engenharia Biomédica da Faculdade Israelita de Ciências da Saúde Albert Einstein. Sou uma desenvolvedora apaixonada por criar soluções inovadoras
+          Aluna do sétimo semestre de Engenharia Biomédica da Faculdade Israelita de Ciências da Saúde Albert Einstein. Sou uma desenvolvedora apaixonada por criar soluções inovadoras
           e interfaces que encantam. Busco sempre unir funcionalidade com design. Programação é transformar ideias e criatividade em realidade
         </p>
       </div>
